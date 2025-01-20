@@ -1,0 +1,245 @@
+[debug] [2025-01-20T11:07:14.983Z] : 
+[debug] [2025-01-20T11:07:14.986Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T11:07:14.987Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-01-20T11:07:14.987Z] : CLI Version:  1.17.6
+[debug] [2025-01-20T11:07:14.988Z] : Platform:     win32
+[debug] [2025-01-20T11:07:14.988Z] : Node Version: v20.18.0
+[debug] [2025-01-20T11:07:14.989Z] : Time:         Mon Jan 20 2025 16:37:14 GMT+0530 (India Standard Time)
+[debug] [2025-01-20T11:07:14.989Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T11:07:14.989Z] : 
+[debug] [2025-01-20T11:07:16.462Z] : > authorizing via signed-in user option
+[debug] [2025-01-20T11:07:16.463Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-01-20T11:07:16.492Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077 
+
+[debug] [2025-01-20T11:07:19.651Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:07:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4de6e939-71e8-4ade-a0a0-395e039bdba9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4de6e939-71e8-4ade-a0a0-395e039bdba9;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:07:19.656Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/environment 
+
+[debug] [2025-01-20T11:07:20.089Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:07:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=ccefa676-ee3d-4e53-b661-dc2356ff604b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ccefa676-ee3d-4e53-b661-dc2356ff604b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:07:20.151Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-20T11:07:20.469Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:07:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=26dc535a-1334-487b-b3c0-46ae42127979;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=26dc535a-1334-487b-b3c0-46ae42127979;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:07:20.473Z] : unknown eol undefined hence skipping check
+[debug] [2025-01-20T11:07:21.816Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/server/upsert 
+
+[debug] [2025-01-20T11:07:28.458Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:07:31 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4660d83f-3238-415b-a668-ccff142e3a48;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4660d83f-3238-415b-a668-ccff142e3a48;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-20T11:07:28.630Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-01-20T11:07:28.630Z] : i Building Application...
+[info] [2025-01-20T11:07:31.520Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-01-20T11:07:41.092Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-20T11:07:41.093Z] : [react-plugin]: [eslint] 
+src\pages\Home.tsx
+  Line 6:10:  'sampleTasks' is defined but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-20T11:07:41.093Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-20T11:07:41.093Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-20T11:07:41.094Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-01-20T11:07:41.112Z] : [react-plugin]:   75.13 kB  build\static\js\main.e1603d18.js
+[info] [2025-01-20T11:07:41.113Z] : [react-plugin]:   2.97 kB   build\static\css\main.a97e72f7.css
+[info] [2025-01-20T11:07:41.113Z] : [react-plugin]:   1.66 kB   build\static\js\453.5da0ec5d.chunk.js
+[info] [2025-01-20T11:07:41.115Z] : [react-plugin]:  
+[debug] [2025-01-20T11:07:41.528Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/webapp 
+
+[debug] [2025-01-20T11:07:44.527Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:07:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=b74c8c02-af50-438f-a865-aff515ce990d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b74c8c02-af50-438f-a865-aff515ce990d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-20T11:07:44.529Z] : 
+[info] [2025-01-20T11:07:44.530Z] : i functions(task_manager_function): URL => https://task-manager-60036595330.development.catalystserverless.in/server/task_manager_function/
+[info] [2025-01-20T11:07:44.530Z] : √ functions(task_manager_function): deploy successful
+[info] [2025-01-20T11:07:44.531Z] : 
+[info] [2025-01-20T11:07:44.531Z] : √ client: deploy successful
+[info] [2025-01-20T11:07:44.532Z] : i client: URL => https://task-manager-60036595330.development.catalystserverless.in/app/index.html
+[info] [2025-01-20T11:07:44.533Z] : 
+[info] [2025-01-20T11:07:44.533Z] : √ Catalyst deploy complete!
+[debug] [2025-01-20T11:07:44.534Z] : NO ERRORS REGISTERED
+[debug] [2025-01-20T11:07:44.534Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-01-20T11:07:44.534Z] : TOTAL DURATION OF COMMAND EXEC : 28106
+[debug] [2025-01-20T11:07:44.545Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-20T11:07:46.578Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:07:49 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=911b91bc-2b25-48cd-a944-836ca07f0b79;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=911b91bc-2b25-48cd-a944-836ca07f0b79;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6EC8CF3F7947586EE9FD873793EEE40D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:07:46.579Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-20T11:07:46.581Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2025-01-20T11:09:14.341Z] : 
+[debug] [2025-01-20T11:09:14.344Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T11:09:14.345Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2025-01-20T11:09:14.345Z] : CLI Version:  1.17.6
+[debug] [2025-01-20T11:09:14.346Z] : Platform:     win32
+[debug] [2025-01-20T11:09:14.346Z] : Node Version: v20.18.0
+[debug] [2025-01-20T11:09:14.347Z] : Time:         Mon Jan 20 2025 16:39:14 GMT+0530 (India Standard Time)
+[debug] [2025-01-20T11:09:14.347Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T11:09:14.347Z] : 
+[debug] [2025-01-20T11:09:15.691Z] : > authorizing via signed-in user option
+[debug] [2025-01-20T11:09:15.692Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2025-01-20T11:09:15.716Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077 
+
+[debug] [2025-01-20T11:09:17.300Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:09:19 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=668002da-248d-4f6b-9089-fc0c0e7164f2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=668002da-248d-4f6b-9089-fc0c0e7164f2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:09:17.306Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/environment 
+
+[debug] [2025-01-20T11:09:18.759Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:09:20 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=1f626eb0-63f7-4a80-8e02-45e7994e7308;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1f626eb0-63f7-4a80-8e02-45e7994e7308;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:09:19.120Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-20T11:10:31.184Z] : 
+[debug] [2025-01-20T11:10:31.188Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T11:10:31.188Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-01-20T11:10:31.188Z] : CLI Version:  1.17.6
+[debug] [2025-01-20T11:10:31.189Z] : Platform:     win32
+[debug] [2025-01-20T11:10:31.190Z] : Node Version: v20.18.0
+[debug] [2025-01-20T11:10:31.190Z] : Time:         Mon Jan 20 2025 16:40:31 GMT+0530 (India Standard Time)
+[debug] [2025-01-20T11:10:31.191Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T11:10:31.191Z] : 
+[debug] [2025-01-20T11:10:32.735Z] : > authorizing via signed-in user option
+[debug] [2025-01-20T11:10:32.736Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-01-20T11:10:32.760Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077 
+
+[debug] [2025-01-20T11:10:33.451Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:10:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=c77716de-63df-4f22-be94-02dee3cb614b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c77716de-63df-4f22-be94-02dee3cb614b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:10:33.458Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/environment 
+
+[debug] [2025-01-20T11:10:36.257Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:10:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=c3e1a928-4c04-4f77-9372-ac8450c25452;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c3e1a928-4c04-4f77-9372-ac8450c25452;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:10:36.281Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-20T11:10:40.593Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:10:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=5fd3f5c4-187e-4c4d-9efa-4d59509d9ec6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5fd3f5c4-187e-4c4d-9efa-4d59509d9ec6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:10:40.596Z] : unknown eol undefined hence skipping check
+[debug] [2025-01-20T11:10:41.960Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/server/upsert 
+
+[debug] [2025-01-20T11:10:55.605Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:10:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=5b706e9c-2e6c-4a85-bb75-7e83758bd715;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5b706e9c-2e6c-4a85-bb75-7e83758bd715;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-20T11:10:55.791Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-01-20T11:10:55.792Z] : i Building Application...
+[info] [2025-01-20T11:10:58.571Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-01-20T11:11:03.180Z] : [react-plugin]: Compiled successfully.
+
+[info] [2025-01-20T11:11:03.180Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-01-20T11:11:03.196Z] : [react-plugin]:   75.13 kB  build\static\js\main.e1603d18.js
+[info] [2025-01-20T11:11:03.197Z] : [react-plugin]:   2.97 kB   build\static\css\main.a97e72f7.css
+[info] [2025-01-20T11:11:03.198Z] : [react-plugin]:   1.66 kB   build\static\js\453.5da0ec5d.chunk.js
+[info] [2025-01-20T11:11:03.198Z] : [react-plugin]:  
+[debug] [2025-01-20T11:11:03.575Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/webapp 
+
+[debug] [2025-01-20T11:11:04.716Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:11:07 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=469a390a-9009-4e96-b467-ca24d577d114;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=469a390a-9009-4e96-b467-ca24d577d114;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-20T11:11:04.719Z] : 
+[info] [2025-01-20T11:11:04.719Z] : i functions(task_manager_function): URL => https://task-manager-60036595330.development.catalystserverless.in/server/task_manager_function/
+[info] [2025-01-20T11:11:04.720Z] : √ functions(task_manager_function): deploy successful
+[info] [2025-01-20T11:11:04.720Z] : 
+[info] [2025-01-20T11:11:04.720Z] : √ client: deploy successful
+[info] [2025-01-20T11:11:04.721Z] : i client: URL => https://task-manager-60036595330.development.catalystserverless.in/app/index.html
+[info] [2025-01-20T11:11:04.721Z] : 
+[info] [2025-01-20T11:11:04.722Z] : √ Catalyst deploy complete!
+[debug] [2025-01-20T11:11:04.722Z] : NO ERRORS REGISTERED
+[debug] [2025-01-20T11:11:04.723Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-01-20T11:11:04.723Z] : TOTAL DURATION OF COMMAND EXEC : 32015
+[debug] [2025-01-20T11:11:04.733Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-20T11:11:05.433Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 11:11:08 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=06d5961a-12c2-4980-a207-1611bd80641f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=06d5961a-12c2-4980-a207-1611bd80641f;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=B1822539AD1DD32DBE33940725856758; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T11:11:05.434Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-20T11:11:05.435Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2025-01-20T12:03:33.462Z] : 
+[debug] [2025-01-20T12:03:33.465Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T12:03:33.466Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2025-01-20T12:03:33.466Z] : CLI Version:  1.17.6
+[debug] [2025-01-20T12:03:33.466Z] : Platform:     win32
+[debug] [2025-01-20T12:03:33.467Z] : Node Version: v20.18.0
+[debug] [2025-01-20T12:03:33.467Z] : Time:         Mon Jan 20 2025 17:33:33 GMT+0530 (India Standard Time)
+[debug] [2025-01-20T12:03:33.467Z] : ----------------------------------------------------------------------
+[debug] [2025-01-20T12:03:33.468Z] : 
+[debug] [2025-01-20T12:03:35.331Z] : > authorizing via signed-in user option
+[debug] [2025-01-20T12:03:35.332Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2025-01-20T12:03:35.358Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077 
+
+[debug] [2025-01-20T12:03:36.630Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 12:03:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=afba88c5-b821-4674-9193-c31954844aa3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=afba88c5-b821-4674-9193-c31954844aa3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T12:03:36.637Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/environment 
+
+[debug] [2025-01-20T12:03:36.927Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 12:03:39 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=e90a2265-0f31-4472-b58f-3ba40ef4563b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e90a2265-0f31-4472-b58f-3ba40ef4563b;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T12:03:36.989Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2025-01-20T12:03:37.192Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 12:03:40 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6e8c133f-1b9e-4607-aaa9-b171bd439b9e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6e8c133f-1b9e-4607-aaa9-b171bd439b9e;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T12:03:37.196Z] : unknown eol undefined hence skipping check
+[debug] [2025-01-20T12:03:38.883Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/server/upsert 
+
+[debug] [2025-01-20T12:03:42.911Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 12:03:46 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=d796982f-0466-404d-a8bb-426c6e2b2909;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d796982f-0466-404d-a8bb-426c6e2b2909;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-20T12:03:43.209Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2025-01-20T12:03:43.209Z] : i Building Application...
+[info] [2025-01-20T12:03:47.029Z] : [react-plugin]: Creating an optimized production build...
+[info] [2025-01-20T12:03:57.788Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2025-01-20T12:03:57.789Z] : [react-plugin]: [eslint] 
+src\pages\Home.tsx
+  Line 6:10:  'sampleTasks' is defined but never used  @typescript-eslint/no-unused-vars
+[info] [2025-01-20T12:03:57.789Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2025-01-20T12:03:57.789Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2025-01-20T12:03:57.790Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2025-01-20T12:03:57.816Z] : [react-plugin]:   75.15 kB (+25 B)  build\static\js\main.93372e2a.js
+[info] [2025-01-20T12:03:57.817Z] : [react-plugin]:   2.97 kB           build\static\css\main.a97e72f7.css
+[info] [2025-01-20T12:03:57.818Z] : [react-plugin]:   1.66 kB           build\static\js\453.5da0ec5d.chunk.js
+[info] [2025-01-20T12:03:57.823Z] : [react-plugin]:  
+[debug] [2025-01-20T12:03:58.298Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/8005000000007077/webapp 
+
+[debug] [2025-01-20T12:04:01.134Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 12:04:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=1c651047-a451-4d6f-933a-62985508f443;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1c651047-a451-4d6f-933a-62985508f443;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-20T12:04:01.136Z] : 
+[info] [2025-01-20T12:04:01.137Z] : i functions(task_manager_function): URL => https://task-manager-60036595330.development.catalystserverless.in/server/task_manager_function/
+[info] [2025-01-20T12:04:01.138Z] : √ functions(task_manager_function): deploy successful
+[info] [2025-01-20T12:04:01.138Z] : 
+[info] [2025-01-20T12:04:01.139Z] : √ client: deploy successful
+[info] [2025-01-20T12:04:01.140Z] : i client: URL => https://task-manager-60036595330.development.catalystserverless.in/app/index.html
+[info] [2025-01-20T12:04:01.140Z] : 
+[info] [2025-01-20T12:04:01.141Z] : √ Catalyst deploy complete!
+[debug] [2025-01-20T12:04:01.142Z] : NO ERRORS REGISTERED
+[debug] [2025-01-20T12:04:01.143Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2025-01-20T12:04:01.143Z] : TOTAL DURATION OF COMMAND EXEC : 25836
+[debug] [2025-01-20T12:04:01.159Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2025-01-20T12:04:01.746Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Mon, 20 Jan 2025 12:04:04 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=bc798106-5194-43b0-9d8f-ab7defa2f1b8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bc798106-5194-43b0-9d8f-ab7defa2f1b8;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=CD5965D9E381C95C1EB860D5217C985D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-20T12:04:01.747Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2025-01-20T12:04:01.750Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
