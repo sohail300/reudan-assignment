@@ -51,13 +51,15 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onSubmit, onClose }) => {
     }
   };
 
+  const inputClasses =
+    "mt-1 block w-full rounded-lg border-gray-200 bg-gray-50 px-4 py-2.5 text-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all duration-200";
+  const labelClasses = "block text-sm font-medium text-gray-700 mb-1";
+  const errorClasses = "text-rose-500 text-sm mt-1.5";
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label
-          htmlFor="title"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="title" className={labelClasses}>
           Title
         </label>
         <input
@@ -66,17 +68,14 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onSubmit, onClose }) => {
           name="title"
           value={formData.title}
           onChange={handleChange}
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+          className={inputClasses}
+          placeholder="Enter task title"
         />
-        {errors.title && (
-          <p className="text-red-500 text-sm mt-1">{errors.title}</p>
-        )}
+        {errors.title && <p className={errorClasses}>{errors.title}</p>}
       </div>
+
       <div>
-        <label
-          htmlFor="description"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="description" className={labelClasses}>
           Description
         </label>
         <textarea
@@ -84,42 +83,45 @@ const TaskForm: React.FC<TaskFormProps> = ({ task, onSubmit, onClose }) => {
           name="description"
           value={formData.description}
           onChange={handleChange}
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+          className={`${inputClasses} resize-none`}
           rows={5}
+          placeholder="Enter task description"
         />
         {errors.description && (
-          <p className="text-red-500 text-sm mt-1">{errors.description}</p>
+          <p className={errorClasses}>{errors.description}</p>
         )}
       </div>
+
       <div>
-        <label
-          htmlFor="status"
-          className="block text-sm font-medium text-gray-700"
-        >
+        <label htmlFor="status" className={labelClasses}>
           Status
         </label>
-        <select
-          id="status"
-          name="status"
-          value={formData.status}
-          onChange={handleChange}
-          className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-        >
-          <option value="pending">Pending</option>
-          <option value="completed">Completed</option>
-        </select>
+        <div className="relative">
+          <select
+            id="status"
+            name="status"
+            value={formData.status}
+            onChange={handleChange}
+            className={inputClasses}
+          >
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+          </select>
+        </div>
       </div>
-      <div className="flex justify-end space-x-2">
+
+      <div className="flex justify-end space-x-3 pt-2">
         <button
           type="button"
           onClick={onClose}
-          className="bg-gray-200 text-gray-700 rounded px-4 py-2"
+          className="flex items-center px-4 py-2 text-sm font-medium text-gray-600 bg-indigo-50 rounded-md hover:bg-indigo-100 transition-all duration-300"
         >
           Cancel
         </button>
+
         <button
           type="submit"
-          className="bg-blue-500 text-white rounded px-4 py-2"
+          className="flex items-center px-4 py-2 text-sm font-medium text-indigo-600 bg-indigo-50 rounded-md hover:bg-indigo-100 transition-all duration-300"
         >
           {task ? "Update Task" : "Add Task"}
         </button>

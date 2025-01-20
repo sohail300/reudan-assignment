@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import TaskList from "../components/TaskList";
 import TaskForm from "../components/TaskForm";
-import Modal from "../components/AddModal";
-import { sampleTasks } from "../utils/tasks";
+import Modal from "../components/Modal";
 import { Task, TaskFormData } from "../types/interfaces";
 import axios from "axios";
 import { BACKEND_URL } from "../utils/config";
@@ -15,7 +14,6 @@ const HomePage: React.FC = () => {
 
   const getTasks = async () => {
     try {
-      console.log("running");
       const response = await axios.get(`${BACKEND_URL}/tasks`);
       console.log(response.data.data);
 
@@ -88,30 +86,55 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
       <Navbar />
-      <div className="container mx-auto p-4 max-w-6xl">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold">Tasks</h2>
+      <div className="container mx-auto px-4 py-8 max-w-7xl">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+          <div className="space-y-1">
+            <h1 className="text-3xl font-bold text-gray-900">Tasks</h1>
+            <p className="text-gray-500">
+              Manage and organize your tasks efficiently
+            </p>
+          </div>
           <button
             onClick={() => openModal()}
-            className="bg-green-500 hover:bg-green-600 text-white rounded px-4 py-2 transition duration-300"
+            className="inline-flex items-center px-4 py-2.5 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transform transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
           >
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
             Add New Task
           </button>
         </div>
+
         <TaskList
           tasks={tasks}
           onEditTask={openModal}
           onDeleteTask={handleDeleteTask}
         />
       </div>
+
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <TaskForm
-          task={editingTask || undefined}
-          onSubmit={editingTask ? handleUpdateTask : handleCreateTask}
-          onClose={closeModal}
-        />
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-gray-900">
+            {editingTask ? "Edit Task" : "Create New Task"}
+          </h2>
+          <TaskForm
+            task={editingTask || undefined}
+            onSubmit={editingTask ? handleUpdateTask : handleCreateTask}
+            onClose={closeModal}
+          />
+        </div>
       </Modal>
     </div>
   );

@@ -1,6 +1,7 @@
 import express from "express";
 import catalystSDK from "zcatalyst-sdk-node";
-import { postSchema } from "./types/post.js";
+import { taskSchema } from "./utils/taskSchema.js";
+import { tableID } from "./utils/config.js";
 import cors from "cors";
 
 const app = express();
@@ -27,10 +28,7 @@ app.get("/api/tasks", async (req, res) => {
   try {
     console.log("-----GET TASK-----");
     const { catalyst } = res.locals;
-    const result = await catalyst
-      .datastore()
-      .table("8005000000007126")
-      .getAllRows();
+    const result = await catalyst.datastore().table(tableID).getAllRows();
 
     console.log(result);
     const tasks = result.map((row) => ({
@@ -58,7 +56,7 @@ app.get("/api/tasks", async (req, res) => {
 app.post("/api/tasks", async (req, res) => {
   try {
     console.log("-----POST TASK-----");
-    const parsedInput = postSchema.safeParse(req.body);
+    const parsedInput = taskSchema.safeParse(req.body);
     if (!parsedInput.success) {
       return res.status(400).send({
         success: false,
@@ -68,7 +66,7 @@ app.post("/api/tasks", async (req, res) => {
     const { title, description, status } = parsedInput.data;
     const { catalyst } = res.locals;
 
-    const table = await catalyst.datastore().table("8005000000007126");
+    const table = await catalyst.datastore().table(tableID);
 
     const result = await table.insertRow({
       Title: title,
@@ -92,7 +90,7 @@ app.post("/api/tasks", async (req, res) => {
 app.put("/api/tasks/:ROWID", async (req, res) => {
   try {
     console.log("-----PUT TASK-----");
-    const parsedInput = postSchema.safeParse(req.body);
+    const parsedInput = taskSchema.safeParse(req.body);
     if (!parsedInput.success) {
       return res.status(400).send({
         success: false,
@@ -103,7 +101,7 @@ app.put("/api/tasks/:ROWID", async (req, res) => {
     const { ROWID } = req.params;
 
     const { catalyst } = res.locals;
-    const table = await catalyst.datastore().table("8005000000007126");
+    const table = await catalyst.datastore().table(tableID);
 
     const result = await table.updateRow({
       Title: title,
@@ -131,7 +129,7 @@ app.delete("/api/tasks/:ROWID", async (req, res) => {
     const { ROWID } = req.params;
 
     const { catalyst } = res.locals;
-    const table = await catalyst.datastore().table("8005000000007126");
+    const table = await catalyst.datastore().table(tableID);
 
     const result = await table.deleteRow(ROWID);
 
